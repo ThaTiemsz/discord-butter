@@ -1,0 +1,37 @@
+{
+  "name": "discord-butter",
+  "title": "Popcorn Time (RP)",
+  "version": "1.0.0",
+  "description": "Discord Rich Presence for Popcorn Time",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThaTiemsz/discord-butter.git"
+  },
+  "keywords": [
+    "discord",
+    "rich",
+    "presence",
+    "discord",
+    "rp",
+    "popcorntime",
+    "popcorn",
+    "time",
+    "butter",
+    "butter",
+    "project"
+  ],
+  "author": "Tiemen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThaTiemsz/discord-butter/issues"
+  },
+  "homepage": "https://github.com/ThaTiemsz/discord-butter#readme",
+  "dependencies": {
+    "butter-remote": "github:ThaTiemsz/butter-remote",
+    "discord-rpc": "^3.0.0",
+    "electron": "^2.0.6"
+  }
+}
