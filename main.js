@@ -9,8 +9,8 @@ let mainWindow
 function createWindow() {
     mainWindow = new BrowserWindow({
         width: 340,
-        height: 230,
-        resizable: false,
+        height: 250,
+        resizable: true,
         title: "Popcorn Time (RP)",
         titleBarStyle: "hidden"
     })
@@ -71,7 +71,7 @@ async function setActivity() {
             const setType = await mainWindow.webContents.executeJavaScript(`document.querySelector("#type").innerHTML = "${res.movie === "movie" ? "Movie" : "Series"}"`)
             const setTitle = await mainWindow.webContents.executeJavaScript(`document.querySelector("#title").innerHTML = "${title()}"`)
 
-            const endTimestamp = (Date.now() / 1000) + (res.duration - res.currentTime)
+            const endTimestamp = Math.round((Date.now() / 1000) + (res.duration - res.currentTime))
 
             rpc.setActivity({
                 state: title(),
